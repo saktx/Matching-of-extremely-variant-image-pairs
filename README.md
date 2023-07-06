@@ -1,8 +1,20 @@
 # Matching-of-extremely-variant-image-pairs
-This repository provides the MATLAB Code (which uses MEX files of OpenCV Library) for Matching 10 Extremely Variant Image Pairs. This code was used for experiments in the research paper entitled: "Potential of SIFT, SURF, KAZE, AKAZE, ORB, BRISK, AGAST, and 7 More Algorithms for Matching Extremely Variant Image Pairs". 
+This repository provides the MATLAB Code (which uses MEX files of OpenCV Library) for Matching 10 Extremely Variant Image Pairs. This code was used for experiments in the research paper entitled: **"Potential of SIFT, SURF, KAZE, AKAZE, ORB, BRISK, AGAST, and 7 More Algorithms for Matching Extremely Variant Image Pairs"**. 
 
-The code uses "full potential" of 14 feature detection algorithms by using their extremely low parameter thresholds. In this way, matching of extremely deteriorated images with their original versions becomes robust.
+The code uses "full potential" of 14 feature detection algorithms by using their extremely low parameter thresholds. In this way, matching of extremely deteriorated images with their originals becomes robust.
 
-If you use this code in any form, please cite our research paper: https://ieeexplore.ieee.org/abstract/document/10099250
+<ins>If you use this code in any form, please **cite** our research paper</ins>: https://ieeexplore.ieee.org/abstract/document/10099250
 
 Complete PDF version of the research paper (with appendix) can be downloaded from this link: https://www.researchgate.net/publication/370177622_Potential_of_SIFT_SURF_KAZE_AKAZE_ORB_BRISK_AGAST_and_7_More_Algorithms_for_Matching_Extremely_Variant_Image_Pairs
+
+
+## Important Instructions
+To run the code, download all the **.m** and **.mat** files (together with 10 image pairs) in **same folder**, and the execute the code...
+
+**Code_Full_Potential.m** is the main (primary) code file which uses feature detectors with extremely low thresholds, for robust performance...
+**Code_with_Default_Thresholds.m** is the secondary code file which uses feature detectors with default (normal) thresholds...
+The "full potential performance" and the "normal performance" of the 14 feature detectors can be compared by running these 2 code files separately...
+
+**analyseFeatureDetector.m** is a function which finds repeatability of the feature detector in use...
+**flannNNDRBasedMatching.m** is a function which applies Nearest-Neighbor-Distance-Ratio (NNDR) based descriptor matching using FLANN...
+**keypoint.mat** is a file used in the main code for improving computational efficiency while mapping keypoints to/from struct format...
