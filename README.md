@@ -3,6 +3,10 @@ This repository provides the MATLAB Code (which uses MEX files of OpenCV Library
 
 The code uses "full potential" of 14 feature detection algorithms by using their extremely low parameter thresholds. In this way, matching of extremely deteriorated images with their originals becomes robust.
 
+The 14 feature detectors are: SIFT, SURF, KAZE, AKAZE, ORB, BRISK, AGAST, FAST, MSER, MSD, GFTT, Harris Corner Detector based GFTT, Harris Laplace Detector, Star Detector, and CenSurE.
+
+The extremely variant image pairs represent 10 types of different deteriorations due to: extreme dust, smoke, darkness (dim light), extreme noise, motion-blur, extreme affine, JPEG compression, occlusion, sunlight/shadow, and decoration using light effects.
+
 <ins>If you use this code in any form, please **cite** our research paper</ins>: https://ieeexplore.ieee.org/abstract/document/10099250
 
 Complete PDF version of the research paper (with appendix) can be downloaded from this link: https://www.researchgate.net/publication/370177622_Potential_of_SIFT_SURF_KAZE_AKAZE_ORB_BRISK_AGAST_and_7_More_Algorithms_for_Matching_Extremely_Variant_Image_Pairs
