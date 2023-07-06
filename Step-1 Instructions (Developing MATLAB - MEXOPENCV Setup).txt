@@ -1,0 +1,28 @@
+Mexopencv kit (source page): https://github.com/kyamagu/mexopencv
+Guide for Building MEX files for OpenCV + Extra Modules: https://github.com/kyamagu/mexopencv/wiki/Installation-%28Windows%2C-MATLAB%2C-OpenCV-3%29
+
+A. Download these packages: OpenCV 3.4 version; Latest opencv_contrib-master; Visual Studio 2015; MATLAB 2016b; Cmake 3.9.0-rc1
+B. Extract it to C\dev directory
+C. DISABLE your Antivirus
+D. Follow Step-2
+E. Open Cmake and set source location to C\dev\opencv\sources and destination location to C\dev\build, click generate.
+F. Follow Step-3
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

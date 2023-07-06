@@ -1,0 +1,41 @@
+%{
+%AAAAAAAAAAAAAAAAAAAAAAAAAAAAA*** MATLAB - OpenCV INTEGRATION PROCESS ***AAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+
+%********** Download and Install these files: MATLAB-2016b; Visual Studio 2015; OpenCV 3.2 ***********
+
+A. Extract OpenCV directly in C Drive.
+B. Open MATLAB. Write "mex -setup c++" in the Command Window of MATLAB. This command will configure Visual Studio C++ Compiler with MATLAB.
+C. Make a new folder in E Drive named "PROJECT".
+D. Set the working directory of MATLAB to "E:\PROJECT".
+E. Download .zip file of "mexopencv-master" from "https://github.com/kyamagu/mexopencv".
+F. Unzip the "mexopencv-master" zipped file in the same folder i.e. "E:\PROJECT". The unzipped folder will appear in the Current Folder window of MATLAB.
+G. Right click this folder in the Current Folder window of MATLAB, click on "Add to Path" and then click "Selected Folders and Subfolders".
+H. As this folder which was initially dull, it will now get prominent. Now double click the folder and several subfolders will be displayed.
+I. Among these subfolders, go in the folder named "+mexopencv" and open the file "make.m" in MATLAB.
+J. Within this file, press "CTRL + F" and search "OpenCV location". Replace the present directory with **** "C:\dev\build\install" **** and save the file.
+K. Now click in the Command Window of MATLAB and write "mexopencv.make". MATLAB will take some time to integrate itself with OpenCV.
+L. In case of any error in previous step, write "mexopencv.make" in the Command Window again and it will initiate the integration.
+M. Wait untill done! Your MATLAB is now ready to use OpenCV functions!
+
+NOTE: Perform your OpenCV related coding in this PROJECT folder every time. You will need to repeat Step 6 each time you run the MATLAB.
+
+
+
+
+SAMPLE CODE:
+
+%%%%%%%%%%% Save some image let suppose "abcd.jpg" in the MATLAB directory then run this program
+clear
+clc
+close
+
+im = cv.imread('abcd.jpg');
+detector = cv.FeatureDetector('ORB'); % use ORB/FAST/BRISK/KAZE/AKAZE
+keypoints = detector.detect(im);
+out = cv.drawKeypoints(im, keypoints);
+figure
+imshow(im)
+figure
+imshow(out)
+
+%}
