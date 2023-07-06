@@ -19,6 +19,8 @@ To run the code, download all the **.m** and **.mat** files (together with 10 im
 
 <ins>This code will work only after setting up **mexopencv** with your MATLAB. To do so, follow the guidelines mentioned in the **Step-1, Step-2, and Step-3 Instruction files**</ins>.
 
+You can downloading the 10 image pairs used in the research paper, from the link provided in **<ins>10 Extremely Variant Image Pairs.txt</ins>** file. The images with format/extension **.ppm** are openable in MATLAB using the image reading function i.e. **imread('affine1.ppm')**
+
 **Code_Full_Potential.m** is the main (primary) code file which uses feature detectors with extremely low thresholds, for robust performance...
 
 **Code_with_Default_Thresholds.m** is the secondary code file which uses feature detectors with default (normal) thresholds...
