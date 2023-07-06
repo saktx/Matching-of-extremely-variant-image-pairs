@@ -1,6 +1,8 @@
 # Matching-of-extremely-variant-image-pairs
 This repository provides the MATLAB Code (which uses MEX files of OpenCV Library) for Matching 10 Extremely Variant Image Pairs. This code was used for experiments in the research paper entitled: **"Potential of SIFT, SURF, KAZE, AKAZE, ORB, BRISK, AGAST, and 7 More Algorithms for Matching Extremely Variant Image Pairs"**. 
 
+<ins>This code will work only after setting up **mexopencv** with your MATLAB. To do so, follow the guidelines mentioned in the **Step-1, Step-2, and Step-3 Instruction files**</ins>.
+
 The code uses "full potential" of 14 feature detection algorithms by using their extremely low parameter thresholds. In this way, matching of extremely deteriorated images with their originals becomes robust.
 
 The 14 feature detectors are: <ins>SIFT, SURF, KAZE, AKAZE, ORB, BRISK, AGAST, FAST, MSER, MSD, GFTT, Harris Corner Detector based GFTT, Harris Laplace Detector, Star Detector, and CenSurE</ins>.
