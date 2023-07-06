@@ -1,3 +1,3 @@
-Download the image pairs from here:
+Download the 10 extremely variant image pairs used in the research paper from the following link:
 
 https://drive.google.com/drive/folders/1jVAXtOh-PxSAH9cqqObiFT2q78oQRPaB?usp=sharing
